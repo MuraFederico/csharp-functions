@@ -6,6 +6,7 @@ void PrintArray(int[] array)
     {
         Console.Write($"{array[i]}, ");
     }
+    Console.WriteLine();
 }
 
 int GetSquared(int number)
@@ -33,3 +34,23 @@ int GetSumArray(int[] array)
 
     return result;
 }
+
+
+int[] numbers = { 2, 6, 7, 5, 3, 9 };
+
+PrintArray(numbers);
+
+int[] squaredArray = GetSquaredArray(numbers);
+
+PrintArray(squaredArray);
+
+PrintArray(numbers);
+
+int sum = GetSumArray(numbers);
+
+Console.WriteLine( sum + "\n");
+
+Console.WriteLine(GetSquared(sum));
+
+
+
