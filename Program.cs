@@ -35,8 +35,20 @@ int GetSumArray(int[] array)
     return result;
 }
 
+Console.Write("dichiara la nughezza dell'array: ");
 
-int[] numbers = { 2, 6, 7, 5, 3, 9 };
+int userLenght = Int32.Parse(Console.ReadLine());
+
+int[] numbers = new int[userLenght];
+
+Console.WriteLine();
+
+Console.Write("inserisci i valori 1 alla volta: ");
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    numbers[i] = Int32.Parse(Console.ReadLine());
+}
 
 PrintArray(numbers);
 
