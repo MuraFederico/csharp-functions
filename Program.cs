@@ -8,8 +8,28 @@ void PrintArray(int[] array)
     }
 }
 
-int Power(int number)
+int GetSquared(int number)
 {
     return number * number;
 };
 
+int[] GetSquaredArray(int[] array)
+{
+    int[] result = (int[])array.Clone();
+    for (int i = 0; i < array.Length; i++)
+    {
+        result[i] = GetSquared(array[i]);
+    }
+    return result;
+}
+
+int GetSumArray(int[] array)
+{
+    int result = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        result += array[i];
+    };
+
+    return result;
+}
